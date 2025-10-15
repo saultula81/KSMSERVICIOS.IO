@@ -1,1 +1,288 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KSM — Conocimiento empaquetado | Prompt Engineering & IA</title>
+  <meta name="description" content="KSM: Venta de conocimiento empaquetado en IA. Cursos, plantillas, ebooks, herramientas y membresía. No vendemos tiempo, vendemos resultados." />
+  <!-- Preconnect + Google Font (opcional, carga ligera) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Link al CSS (asume styles.css en el mismo repo) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Progressive enhancement: enable smooth scrolling via CSS -->
+</head>
+<body class="ksm-root">
+  <!-- HEADER: Logo centrado + navegación ancla -->
+  <header class="site-header" role="banner" aria-label="Cabecera principal">
+    <div class="container header-inner">
+      <div class="logo" aria-hidden="false">
+        <a href="#hero" class="logo-link" aria-label="KSM — Volver al inicio">
+          <!-- Simple logotype text: KSM -->
+          <span class="logo-mark">KSM</span>
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#acceso">Membresía</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn-primary" href="#productos">Ver productos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu button (checkbox hack minimal) -->
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger"></span>
+      </label>
+
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-drawer" aria-hidden="true">
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acceso">Membresía</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn-primary" href="#productos">Ver productos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section id="hero" class="hero" role="region" aria-label="Propuesta de valor principal">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">KSM — Conocimiento empaquetado, no tiempo</h1>
+          <p class="hero-sub">
+            Ingeniería de prompts y asesoría en IA convertida en productos listos para usar:
+            cursos, plantillas, guías y herramientas que escalan sin facturar horas.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn-primary large" href="#productos">Explorar productos</a>
+            <a class="btn-ghost" href="#servicios">Consultoría premium</a>
+          </div>
+
+          <ul class="hero-features" aria-hidden="true">
+            <li>Entrega inmediata — activos digitales listos para implementar</li>
+            <li>Escalabilidad real — tu conocimiento convertido en ingresos</li>
+            <li>Optimizado para resultados y ROI medible</li>
+          </ul>
+        </div>
+
+        <!-- Visual minimal (placeholder) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card-visual">
+            <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="156" height="156" rx="18" stroke="rgba(0,0,0,0.06)" stroke-width="4" fill="none"/>
+              <path d="M30 120 L60 40 L110 110" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS (Sección principal, la más destacada) -->
+    <section id="productos" class="productos" role="region" aria-label="Productos digitales">
+      <div class="container">
+        <header class="section-header">
+          <h2>Productos digitales</h2>
+          <p class="section-lead">Activos diseñados para transformar conocimiento en ingresos recurrentes.</p>
+        </header>
+
+        <!-- Grid de 5 productos, visualmente jerárquico -->
+        <div class="productos-grid" role="list">
+          <!-- Cursos (destacado grande) -->
+          <article class="producto producto--featured" role="listitem" aria-labelledby="prod-1-title">
+            <div class="producto-body">
+              <h3 id="prod-1-title">Cursos en línea sobre prompting</h3>
+              <p class="producto-desc">
+                Programas modulares que llevan a la maestría en prompt engineering: ejercicios prácticos, plantillas y estudios de caso para aplicar desde el primer día.
+              </p>
+              <ul class="producto-kv">
+                <li>Formato: lecciones + tareas</li>
+                <li>Resultados: reducción de pruebas y errores</li>
+              </ul>
+            </div>
+            <div class="producto-cta">
+              <a class="btn-outline" href="#acceso">Ver curso</a>
+            </div>
+          </article>
+
+          <!-- Plantillas -->
+          <article class="producto" role="listitem" aria-labelledby="prod-2-title">
+            <div class="producto-body">
+              <h4 id="prod-2-title">Plantillas de prompts descargables</h4>
+              <p class="producto-desc">
+                Paquetes instantáneos por nicho — prompts probados para marketing, atención al cliente, generación de código y creación de contenido.
+              </p>
+            </div>
+            <div class="producto-cta">
+              <a class="btn-outline" href="#productos">Descargar</a>
+            </div>
+          </article>
+
+          <!-- Ebooks -->
+          <article class="producto" role="listitem" aria-labelledby="prod-3-title">
+            <div class="producto-body">
+              <h4 id="prod-3-title">Libros electrónicos (ebooks)</h4>
+              <p class="producto-desc">
+                Guías profundas y metodologías reproducibles: desde fundamentos hasta estrategias avanzadas para implementar IA en procesos.
+              </p>
+            </div>
+            <div class="producto-cta">
+              <a class="btn-outline" href="#productos">Leer muestra</a>
+            </div>
+          </article>
+
+          <!-- Herramientas -->
+          <article class="producto" role="listitem" aria-labelledby="prod-4-title">
+            <div class="producto-body">
+              <h4 id="prod-4-title">Herramientas automatizadas</h4>
+              <p class="producto-desc">
+                Generadores de prompts y utilidades prácticas que aumentan la productividad: integra, ajusta y exporta prompts en segundos.
+              </p>
+            </div>
+            <div class="producto-cta">
+              <a class="btn-outline" href="#productos">Probar</a>
+            </div>
+          </article>
+
+          <!-- Membresía -->
+          <article class="producto producto--accent" role="listitem" aria-labelledby="prod-5-title">
+            <div class="producto-body">
+              <h4 id="prod-5-title">Membresías & comunidad</h4>
+              <p class="producto-desc">
+                Acceso continuo a contenido exclusivo, actualizaciones de prompts, sesiones en vivo y una comunidad privada para acelerar resultados.
+              </p>
+            </div>
+            <div class="producto-cta">
+              <a class="btn-primary small" href="#acceso">Unirse</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS y ASESORÍA -->
+    <section id="servicios" class="servicios" role="region" aria-label="Servicios y asesoría">
+      <div class="container">
+        <header class="section-header">
+          <h2>Servicios y asesoría</h2>
+          <p class="section-lead">Consultoría premium para proyectos estratégicos. Enfocado en resultados, no en horas facturadas.</p>
+        </header>
+
+        <div class="servicios-grid">
+          <div class="servicio">
+            <h4>Diagnóstico estratégico de IA</h4>
+            <p>Evaluación rápida del potencial de IA en tu negocio, con hoja de ruta priorizada y prototipos de prompts para validar hipótesis.</p>
+          </div>
+
+          <div class="servicio">
+            <h4>Implementación y transferencia</h4>
+            <p>Soporte en la integración de prompts y automatizaciones; entregamos plantillas, documentación y formación para internalizar el conocimiento.</p>
+          </div>
+
+          <div class="servicio">
+            <h4>Paquetes premium por proyecto</h4>
+            <p>Soluciones llave en mano para productos digitales: desde el diseño pedagógico de un curso hasta el lanzamiento y funnel de ventas.</p>
+          </div>
+        </div>
+
+        <div class="servicios-cta">
+          <a class="btn-ghost" href="#contacto">Solicitar consultoría</a>
+          <a class="btn-outline" href="#productos">Ver productos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESO / MEMBRESÍA (Sección enfocada en conversión recurrente) -->
+    <section id="acceso" class="acceso" role="region" aria-label="Membresía y comunidad">
+      <div class="container acceso-inner">
+        <div class="acceso-copy">
+          <h2>Membresía KSM</h2>
+          <p class="section-lead">
+            Acceso continuo a plantillas actualizadas, sesiones en vivo, y recursos exclusivos para mantenerte a la vanguardia en IA.
+          </p>
+          <ul class="acceso-points">
+            <li>Actualizaciones mensuales de prompts</li>
+            <li>Sesiones Q&A mensuales</li>
+            <li>Canal privado para feedback y colaboración</li>
+          </ul>
+          <div class="acceso-cta">
+            <a class="btn-primary" href="#contacto">Comenzar prueba</a>
+            <a class="btn-ghost" href="#productos">Ver beneficios</a>
+          </div>
+        </div>
+
+        <div class="acceso-panel" aria-hidden="true">
+          <div class="pricing-card">
+            <div class="price">Prueba 7 días</div>
+            <div class="price-sub">Luego USD X / mes</div>
+            <a class="btn-primary" href="#contacto">Unirse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="site-footer" role="contentinfo" aria-label="Pie de página">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="logo small" aria-hidden="true"><span class="logo-mark">KSM</span></div>
+        <p class="muted">KSM — Conocimiento empaquetado. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Enlaces</h5>
+        <ul class="footer-links">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#acceso">Membresía</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <address>
+          <a href="mailto:hello@ksm.example">hello@ksm.example</a><br>
+          <a href="https://github.com/ksm" target="_blank" rel="noopener">GitHub (repositorio)</a>
+        </address>
+
+        <div class="socials" aria-hidden="true">
+          <a href="#" aria-label="Twitter">Twitter</a> ·
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small class="muted">© <span id="year"></span> KSM. Hecho con intención. Diseñado para escalar.</small>
+    </div>
+  </footer>
+
+  <!-- Minimal inline script for accessibility (year inject + nav close on link click for mobile) -->
+  <script>
+    // Inject current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Close mobile nav when clicking an anchor inside it
+    document.querySelectorAll('.mobile-drawer a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('nav-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
 
