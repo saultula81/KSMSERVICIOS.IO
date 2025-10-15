@@ -1,109 +1,98 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>KSMSERVICIOS — Conocimiento empaquetado</title>
-  <meta name="description" content="KSMSERVICIOS: servicios personalizados de prompting y asesoría para transformar tu conocimiento en productos digitales rentables.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSM Servicios - Prompt Engineering y Asesoría en IA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="ksm-root">
-
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="#hero" class="logo-link" aria-label="KSMSERVICIOS inicio"><span class="logo-mark">KSMSERVICIOS</span></a>
-
-      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#acceso">Membresía</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a class="btn-primary" href="#productos">Ver productos</a></li>
-        </ul>
-      </nav>
-
-      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-hidden="true" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-        <span class="hamburger"></span>
-      </label>
-    </div>
-
-    <div class="mobile-drawer" aria-hidden="true">
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#acceso">Membresía</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="btn-primary" href="#productos">Ver productos</a></li>
-      </ul>
-    </div>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">KSM</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <main>
-    <section id="hero" class="hero" role="region" aria-label="Propuesta de valor principal">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1 class="hero-title">KSMSERVICIOS — Conocimiento empaquetado, no tiempo</h1>
-          <p class="hero-sub">
-            KsmServicios ofrece servicios personalizados de prompting y asesoría especializada para transformar tu conocimiento en productos digitales rentables.
-            Convertimos experiencia en cursos, plantillas, ebooks, herramientas y membresías que generan ingresos recurrentes.
-          </p>
-          <div class="hero-ctas">
-            <a class="btn-primary large" href="#productos">Explorar productos</a>
-            <a class="btn-ghost" href="#servicios">Consultoría premium</a>
-          </div>
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <h1>KSM Servicios</h1>
+    <p class="slogan">Monetiza tu conocimiento. Escala tu impacto.</p>
+    <p class="descripcion">
+      KsmServicios ofrece servicios personalizados de prompting y asesoría especializada para transformar tu conocimiento en productos digitales rentables. 
+      En lugar de vender horas, te ayudamos a crear cursos en línea, plantillas de prompts descargables, ebooks, herramientas automatizadas y membresías exclusivas, 
+      que potencian tu talento y generan ingresos recurrentes.
+    </p>
+    <a href="#productos" class="cta">Ver Productos</a>
+  </section>
 
-          <ul class="hero-features" aria-hidden="true">
-            <li>Activos digitales listos para implementar</li>
-            <li>Escalabilidad real: ingresos sin facturar horas</li>
-            <li>Soporte estratégico y formación práctica</li>
-          </ul>
-        </div>
-
-        <div class="hero-visual" aria-hidden="true">
-          <div class="card-visual">
-            <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="2" y="2" width="156" height="156" rx="18" stroke="rgba(0,0,0,0.06)" stroke-width="4" fill="none"/>
-              <path d="M30 120 L60 40 L110 110" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
+  <!-- ===== PRODUCTOS ===== -->
+  <section id="productos" class="productos">
+    <h2>Productos Digitales</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <h3>Cursos en Línea</h3>
+        <p>Domina el prompting con programas estructurados paso a paso.</p>
       </div>
-    </section>
+      <div class="producto">
+        <h3>Plantillas de Prompts</h3>
+        <p>Soluciones instantáneas listas para usar y adaptar.</p>
+      </div>
+      <div class="producto">
+        <h3>Ebooks</h3>
+        <p>Guías profundas sobre estrategias avanzadas de IA aplicada.</p>
+      </div>
+      <div class="producto">
+        <h3>Herramientas Automatizadas</h3>
+        <p>Generadores inteligentes para aumentar tu productividad.</p>
+      </div>
+      <div class="producto">
+        <h3>Membresías Exclusivas</h3>
+        <p>Acceso continuo a contenidos premium y actualizaciones de IA.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- PRODUCTOS -->
-    <section id="productos" class="productos" role="region" aria-label="Productos digitales">
-      <div class="container">
-        <header class="section-header">
-          <h2>Productos digitales</h2>
-          <p class="section-lead">Activos diseñados para transformar conocimiento en ingresos recurrentes.</p>
-        </header>
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="servicios">
+    <h2>Servicios y Asesoría</h2>
+    <p>Ofrecemos consultoría personalizada en ingeniería de prompts y estrategias de monetización digital. Este servicio premium está diseñado para maximizar el valor de tu conocimiento y llevar tus ideas al siguiente nivel.</p>
+    <a href="#contacto" class="cta">Solicitar Asesoría</a>
+  </section>
 
-        <div class="productos-grid" role="list">
-          <article class="producto producto--featured" role="listitem" aria-labelledby="prod-1-title">
-            <div class="producto-body">
-              <h3 id="prod-1-title">Cursos en línea sobre prompting</h3>
-              <p class="producto-desc">Programas modulares con ejercicios prácticos, plantillas y casos reales para dominar prompt engineering.</p>
-            </div>
-            <div class="producto-cta">
-              <a class="btn-outline" href="#acceso">Ver curso</a>
-            </div>
-          </article>
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Ubicación: Rosario del Tala, Entre Ríos</p>
+    <p>Email: <a href="mailto:saultula.st@gmail.com">saultula.st@gmail.com</a></p>
+    <div class="social">
+      <a href="https://www.instagram.com/ksm_servicios" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/fernandomef" target="_blank">Facebook</a>
+    </div>
 
-          <article class="producto" role="listitem" aria-labelledby="prod-2-title">
-            <div class="producto-body">
-              <h4 id="prod-2-title">Plantillas de prompts descargables</h4>
-              <p class="producto-desc">Paquetes por nicho: marketing, soporte, creación de contenido y automatización.</p>
-            </div>
-            <div class="producto-cta">
-              <a class="btn-outline" href="#productos">Descargar</a>
-            </div>
-          </article>
+    <!-- FORMULARIO EMBEBIDO DE GOOGLE FORMS -->
+    <div class="form-container">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLScqelEzDNmNbkhK_6BOA5FEYi24xjJ0vNdkyUk-3PqAStZV6A/viewform?usp=dialog" 
+        width="100%" 
+        height="700" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0"
+        allowfullscreen>
+        Cargando formulario...
+      </iframe>
+    </div>
+  </section>
 
-          <article class="producto" role="listitem" aria-labelledby="prod-3-title">
-
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 KSM Servicios — Todos los derechos reservados.</p>
+    <p><a href="https://github.com/">Alojado en GitHub Pages</a></p>
+  </footer>
+</body>
+</html>
