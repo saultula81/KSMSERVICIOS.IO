@@ -1,109 +1,64 @@
-<!-- index.html -->
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>KSMSERVICIOS — Conocimiento empaquetado</title>
-  <meta name="description" content="KSMSERVICIOS: servicios personalizados de prompting y asesoría para transformar tu conocimiento en productos digitales rentables.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="ksm-root">
+:root {
+  --color-fondo: #ffffff;
+  --color-texto: #111111;
+  --color-acento: #0044cc;
+  --color-gris: #f4f4f4;
+  --fuente: 'Helvetica Neue', Arial, sans-serif;
+}
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="#hero" class="logo-link" aria-label="KSMSERVICIOS inicio"><span class="logo-mark">KSMSERVICIOS</span></a>
+* { margin:0; padding:0; box-sizing:border-box; }
 
-      <nav class="main-nav" role="navigation" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#acceso">Membresía</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a class="btn-primary" href="#productos">Ver productos</a></li>
-        </ul>
-      </nav>
+body {
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+}
 
-      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-hidden="true" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-        <span class="hamburger"></span>
-      </label>
-    </div>
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: var(--color-fondo);
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo { font-size: 1.8rem; font-weight: bold; letter-spacing:2px; }
+nav a { margin: 0 1rem; text-decoration: none; color: var(--color-texto); font-weight:500; transition:0.3s; }
+nav a:hover { color: var(--color-acento); }
 
-    <div class="mobile-drawer" aria-hidden="true">
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#acceso">Membresía</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a class="btn-primary" href="#productos">Ver productos</a></li>
-      </ul>
-    </div>
-  </header>
+/* HERO */
+.hero { text-align:center; padding:6rem 2rem; background: var(--color-gris); }
+.hero h1 { font-size:3rem; margin-bottom:1rem; }
+.hero .slogan { font-size:1.5rem; color:var(--color-acento); margin-bottom:1.5rem; }
+.hero .descripcion { max-width:800px; margin:0 auto 2rem; }
+.cta { background: var(--color-acento); color:#fff; padding:.8rem 1.6rem; border-radius:25px; text-decoration:none; font-weight:bold; transition:.3s; }
+.cta:hover { background:#002a80; }
 
-  <!-- HERO -->
-  <main>
-    <section id="hero" class="hero" role="region" aria-label="Propuesta de valor principal">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1 class="hero-title">KSMSERVICIOS — Conocimiento empaquetado, no tiempo</h1>
-          <p class="hero-sub">
-            KsmServicios ofrece servicios personalizados de prompting y asesoría especializada para transformar tu conocimiento en productos digitales rentables.
-            Convertimos experiencia en cursos, plantillas, ebooks, herramientas y membresías que generan ingresos recurrentes.
-          </p>
-          <div class="hero-ctas">
-            <a class="btn-primary large" href="#productos">Explorar productos</a>
-            <a class="btn-ghost" href="#servicios">Consultoría premium</a>
-          </div>
+/* PRODUCTOS */
+.productos { text-align:center; padding:5rem 2rem; }
+.productos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-top:3rem; }
+.producto { padding:2rem; background:var(--color-gris); border-radius:15px; transition:.3s; }
+.producto:hover { transform:translateY(-5px); }
 
-          <ul class="hero-features" aria-hidden="true">
-            <li>Activos digitales listos para implementar</li>
-            <li>Escalabilidad real: ingresos sin facturar horas</li>
-            <li>Soporte estratégico y formación práctica</li>
-          </ul>
-        </div>
+/* SERVICIOS */
+.servicios { text-align:center; padding:5rem 2rem; background:#fafafa; }
+.servicios p { max-width:800px; margin:1rem auto 2rem; }
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="card-visual">
-            <svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="2" y="2" width="156" height="156" rx="18" stroke="rgba(0,0,0,0.06)" stroke-width="4" fill="none"/>
-              <path d="M30 120 L60 40 L110 110" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
+/* MODAL */
+.modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.6); }
+.modal-content { background-color:#fff; margin:5% auto; padding:20px; border-radius:10px; width:90%; max-width:800px; position:relative; }
+.cerrar { color:#aaa; position:absolute; top:10px; right:20px; font-size:28px; font-weight:bold; cursor:pointer; }
+.cerrar:hover { color:#000; }
 
-    <!-- PRODUCTOS -->
-    <section id="productos" class="productos" role="region" aria-label="Productos digitales">
-      <div class="container">
-        <header class="section-header">
-          <h2>Productos digitales</h2>
-          <p class="section-lead">Activos diseñados para transformar conocimiento en ingresos recurrentes.</p>
-        </header>
+/* FOOTER */
+footer { text-align:center; padding:2rem; background: var(--color-gris); font-size:.9rem; }
+footer a { color:var(--color-acento); text-decoration:none; font-weight:500; }
+footer a:hover { text-decoration:underline; }
 
-        <div class="productos-grid" role="list">
-          <article class="producto producto--featured" role="listitem" aria-labelledby="prod-1-title">
-            <div class="producto-body">
-              <h3 id="prod-1-title">Cursos en línea sobre prompting</h3>
-              <p class="producto-desc">Programas modulares con ejercicios prácticos, plantillas y casos reales para dominar prompt engineering.</p>
-            </div>
-            <div class="producto-cta">
-              <a class="btn-outline" href="#acceso">Ver curso</a>
-            </div>
-          </article>
-
-          <article class="producto" role="listitem" aria-labelledby="prod-2-title">
-            <div class="producto-body">
-              <h4 id="prod-2-title">Plantillas de prompts descargables</h4>
-              <p class="producto-desc">Paquetes por nicho: marketing, soporte, creación de contenido y automatización.</p>
-            </div>
-            <div class="producto-cta">
-              <a class="btn-outline" href="#productos">Descargar</a>
-            </div>
-          </article>
-
-          <article class="producto" role="listitem" aria-labelledby="prod-3-title">
-
+/* RESPONSIVE */
+@media(max-width:768px){ header { flex-direction:column; } nav { margin-top:1rem; } }
