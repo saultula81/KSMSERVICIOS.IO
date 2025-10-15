@@ -3,98 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KSM Servicios - Prompt Engineering y Asesoría en IA</title>
+  <title>KSM Servicios | Prompt Engineering y Asesoría en IA</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header>
+  <header id="main-header">
     <div class="logo">KSM</div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto" id="btn-contacto">Contacto</a>
+    <nav aria-label="Navegación principal del sitio">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto" class="btn-contacto">Contacto</a></li> </ul>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="inicio" class="hero">
-    <h1>KSM Servicios</h1>
-    <p class="slogan">Monetiza tu conocimiento. Escala tu impacto.</p>
-    <p class="descripcion">
-      KsmServicios ofrece servicios personalizados de prompting y asesoría especializada para transformar tu conocimiento en productos digitales rentables. 
-      En lugar de vender horas, te ayudamos a crear cursos en línea, plantillas de prompts descargables, ebooks, herramientas automatizadas y membresías exclusivas, 
-      que potencian tu talento y generan ingresos recurrentes.
-    </p>
-    <a href="#productos" class="cta">Ver Productos</a>
-    <a href="#" class="cta" id="abrir-modal">Contáctanos</a>
-  </section>
+  <main>
+    <section id="inicio" class="hero" role="region" aria-label="Introducción a KSM Servicios">
+      <hgroup>
+          <h1>Monetiza tu conocimiento. Escala tu impacto.</h1>
+          <p class="slogan">KSM Servicios de Prompt Engineering y Asesoría en IA.</p>
+      </hgroup>
+      <p class="descripcion">
+        KsmServicios ofrece asesoría especializada y servicios personalizados de **Prompt Engineering** para transformar tu conocimiento en productos digitales rentables. 
+        En lugar de vender horas, te ayudamos a crear activos digitales (cursos, plantillas, ebooks, herramientas, membresías) que potencian tu talento y generan ingresos recurrentes.
+      </p>
+      <div class="cta-group">
+        <a href="#productos" class="cta-primary">Ver Productos</a>
+        <a href="#contacto" class="cta-secondary" id="abrir-modal">Solicitar Asesoría</a> </div>
+      </section>
 
-  <!-- ===== PRODUCTOS ===== -->
-  <section id="productos" class="productos">
-    <h2>Productos Digitales</h2>
-    <div class="productos-grid">
-      <div class="producto">
-        <h3>Cursos en Línea</h3>
-        <p>Domina el prompting con programas estructurados paso a paso.</p>
+    <hr>
+
+    <section id="productos" class="productos" role="region" aria-label="Productos Digitales de KSM Servicios">
+      <h2>Productos Digitales que Generan Ingresos Pasivos</h2>
+      <div class="productos-grid">
+        <article class="producto">
+          <h3>Cursos en Línea 🎓</h3>
+          <p>Domina el prompting y la IA con programas estructurados paso a paso, diseñados por expertos.</p>
+        </article>
+        <article class="producto">
+          <h3>Plantillas de Prompts ⚙️</h3>
+          <p>Soluciones instantáneas listas para usar y adaptar. Máxima eficiencia en tareas de IA cotidianas.</p>
+        </article>
+        <article class="producto">
+          <h3>Ebooks y Guías 📚</h3>
+          <p>Guías profundas sobre estrategias avanzadas de IA aplicada y monetización de conocimiento.</p>
+        </article>
+        <article class="producto">
+          <h3>Herramientas Automatizadas 🤖</h3>
+          <p>Generadores inteligentes y scripts para aumentar tu productividad y reducir la carga de trabajo manual.</p>
+        </article>
+        <article class="producto">
+          <h3>Membresías Exclusivas ✨</h3>
+          <p>Acceso continuo a contenidos premium, sesiones en vivo y las últimas actualizaciones de la IA.</p>
+        </article>
       </div>
-      <div class="producto">
-        <h3>Plantillas de Prompts</h3>
-        <p>Soluciones instantáneas listas para usar y adaptar.</p>
+    </section>
+
+    <hr>
+
+    <section id="servicios" class="servicios" role="region" aria-label="Servicios de Asesoría Personalizada">
+      <div class="servicios-content">
+        <h2>Consultoría y Estrategia AI Personalizada</h2>
+        <p>Ofrecemos consultoría especializada en ingeniería de prompts y estrategias de monetización digital. Este servicio premium está diseñado para **maximizar el valor de tu conocimiento** y llevar tus ideas a una escala profesional.</p>
+        <a href="#" class="cta-primary" id="abrir-modal2">Solicitar Asesoría Premium</a>
       </div>
-      <div class="producto">
-        <h3>Ebooks</h3>
-        <p>Guías profundas sobre estrategias avanzadas de IA aplicada.</p>
-      </div>
-      <div class="producto">
-        <h3>Herramientas Automatizadas</h3>
-        <p>Generadores inteligentes para aumentar tu productividad.</p>
-      </div>
-      <div class="producto">
-        <h3>Membresías Exclusivas</h3>
-        <p>Acceso continuo a contenidos premium y actualizaciones de IA.</p>
+    </section>
+
+    <div id="modal-form" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <span class="cerrar" aria-label="Cerrar formulario">&times;</span>
+        <h3 id="modal-title" class="sr-only">Formulario de Contacto</h3>
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLScqelEzDNmNbkhK_6BOA5FEYi24xjJ0vNdkyUk-3PqAStZV6A/viewform?usp=dialog" 
+          width="100%" 
+          height="600" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+          title="Formulario de contacto de Google Forms">
+          Cargando formulario de contacto...
+        </iframe>
       </div>
     </div>
-  </section>
+  </main>
 
-  <!-- ===== SERVICIOS ===== -->
-  <section id="servicios" class="servicios">
-    <h2>Servicios y Asesoría</h2>
-    <p>Ofrecemos consultoría personalizada en ingeniería de prompts y estrategias de monetización digital. Este servicio premium está diseñado para maximizar el valor de tu conocimiento y llevar tus ideas al siguiente nivel.</p>
-    <a href="#" class="cta" id="abrir-modal2">Solicitar Asesoría</a>
-  </section>
+  <hr>
 
-  <!-- ===== MODAL FORMULARIO ===== -->
-  <div id="modal-form" class="modal">
-    <div class="modal-content">
-      <span class="cerrar">&times;</span>
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScqelEzDNmNbkhK_6BOA5FEYi24xjJ0vNdkyUk-3PqAStZV6A/viewform?usp=dialog" 
-        width="100%" 
-        height="600" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0"
-        allowfullscreen>
-        Cargando formulario...
-      </iframe>
+  <footer id="main-footer">
+    <div class="footer-info">
+      <p>📍 Rosario del Tala, Entre Ríos, Argentina | ✉️ <a href="mailto:saultula.st@gmail.com">saultula.st@gmail.com</a></p>
+      <p>© <time datetime="2025">2025</time> KSM Servicios — Todos los derechos reservados.</p>
     </div>
-  </div>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>📍 Rosario del Tala, Entre Ríos | ✉️ saultula.st@gmail.com</p>
-    <p>
-      Síguenos en: 
-      <a href="https://www.instagram.com/ksm_servicios" target="_blank">Instagram</a> | 
-      <a href="https://www.facebook.com/fernandomef" target="_blank">Facebook</a>
-    </p>
-    <p>© 2025 KSM Servicios — Todos los derechos reservados.</p>
+    <nav class="footer-social" aria-label="Redes Sociales">
+      <p>Síguenos en:</p>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/ksm_servicios" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/fernandomef" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+    </nav>
   </footer>
 
-  <!-- ===== SCRIPT MODAL ===== -->
   <script>
     const modal = document.getElementById("modal-form");
     const btns = [document.getElementById("abrir-modal"), document.getElementById("abrir-modal2")];
