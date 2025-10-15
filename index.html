@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">KSM</div>
@@ -14,7 +15,7 @@
       <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
       <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#contacto" id="btn-contacto">Contacto</a>
     </nav>
   </header>
 
@@ -28,6 +29,7 @@
       que potencian tu talento y generan ingresos recurrentes.
     </p>
     <a href="#productos" class="cta">Ver Productos</a>
+    <a href="#" class="cta" id="abrir-modal">Contáctanos</a>
   </section>
 
   <!-- ===== PRODUCTOS ===== -->
@@ -61,25 +63,17 @@
   <section id="servicios" class="servicios">
     <h2>Servicios y Asesoría</h2>
     <p>Ofrecemos consultoría personalizada en ingeniería de prompts y estrategias de monetización digital. Este servicio premium está diseñado para maximizar el valor de tu conocimiento y llevar tus ideas al siguiente nivel.</p>
-    <a href="#contacto" class="cta">Solicitar Asesoría</a>
+    <a href="#" class="cta" id="abrir-modal2">Solicitar Asesoría</a>
   </section>
 
-  <!-- ===== CONTACTO ===== -->
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>Ubicación: Rosario del Tala, Entre Ríos</p>
-    <p>Email: <a href="mailto:saultula.st@gmail.com">saultula.st@gmail.com</a></p>
-    <div class="social">
-      <a href="https://www.instagram.com/ksm_servicios" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/fernandomef" target="_blank">Facebook</a>
-    </div>
-
-    <!-- FORMULARIO EMBEBIDO DE GOOGLE FORMS -->
-    <div class="form-container">
+  <!-- ===== MODAL FORMULARIO ===== -->
+  <div id="modal-form" class="modal">
+    <div class="modal-content">
+      <span class="cerrar">&times;</span>
       <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLScqelEzDNmNbkhK_6BOA5FEYi24xjJ0vNdkyUk-3PqAStZV6A/viewform?usp=dialog" 
         width="100%" 
-        height="700" 
+        height="600" 
         frameborder="0" 
         marginheight="0" 
         marginwidth="0"
@@ -87,12 +81,41 @@
         Cargando formulario...
       </iframe>
     </div>
-  </section>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
+    <p>📍 Rosario del Tala, Entre Ríos | ✉️ saultula.st@gmail.com</p>
+    <p>
+      Síguenos en: 
+      <a href="https://www.instagram.com/ksm_servicios" target="_blank">Instagram</a> | 
+      <a href="https://www.facebook.com/fernandomef" target="_blank">Facebook</a>
+    </p>
     <p>© 2025 KSM Servicios — Todos los derechos reservados.</p>
-    <p><a href="https://github.com/">Alojado en GitHub Pages</a></p>
   </footer>
+
+  <!-- ===== SCRIPT MODAL ===== -->
+  <script>
+    const modal = document.getElementById("modal-form");
+    const btns = [document.getElementById("abrir-modal"), document.getElementById("abrir-modal2")];
+    const span = document.getElementsByClassName("cerrar")[0];
+
+    btns.forEach(btn => {
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+    });
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
