@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KSM Servicios | Prompt Engineering y Asesoría en IA</title>
+  
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,24 +20,26 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto" class="btn-contacto">Contacto</a></li> </ul>
+        <li><a href="#contacto" class="btn-contacto" id="abrir-modal-header">Contacto</a></li> 
+      </ul>
     </nav>
   </header>
 
   <main>
     <section id="inicio" class="hero" role="region" aria-label="Introducción a KSM Servicios">
-      <hgroup>
-          <h1>Monetiza tu conocimiento. Escala tu impacto.</h1>
-          <p class="slogan">KSM Servicios de Prompt Engineering y Asesoría en IA.</p>
-      </hgroup>
-      <p class="descripcion">
-        KsmServicios ofrece asesoría especializada y servicios personalizados de **Prompt Engineering** para transformar tu conocimiento en productos digitales rentables. 
-        En lugar de vender horas, te ayudamos a crear activos digitales (cursos, plantillas, ebooks, herramientas, membresías) que potencian tu talento y generan ingresos recurrentes.
-      </p>
-      <div class="cta-group">
-        <a href="#productos" class="cta-primary">Ver Productos</a>
-        <a href="#contacto" class="cta-secondary" id="abrir-modal">Solicitar Asesoría</a> </div>
-      </section>
+        <hgroup>
+            <h1>Monetiza tu conocimiento. Escala tu impacto.</h1>
+            <p class="slogan">KSM Servicios de Prompt Engineering y Asesoría en IA.</p>
+        </hgroup>
+        <p class="descripcion">
+          KsmServicios ofrece asesoría especializada y servicios personalizados de **Prompt Engineering** para transformar tu conocimiento en productos digitales rentables. 
+          En lugar de vender horas, te ayudamos a crear activos digitales (cursos, plantillas, ebooks, herramientas, membresías) que potencian tu talento y generan ingresos recurrentes.
+        </p>
+        <div class="cta-group">
+          <a href="#productos" class="cta-primary">Ver Productos</a>
+          <a href="#contacto" class="cta-secondary" id="abrir-modal">Solicitar Asesoría</a> 
+        </div>
+    </section>
 
     <hr>
 
@@ -41,23 +47,23 @@
       <h2>Productos Digitales que Generan Ingresos Pasivos</h2>
       <div class="productos-grid">
         <article class="producto">
-          <h3>Cursos en Línea 🎓</h3>
+          <h3><i class="fas fa-graduation-cap icon-product"></i> Cursos en Línea</h3>
           <p>Domina el prompting y la IA con programas estructurados paso a paso, diseñados por expertos.</p>
         </article>
         <article class="producto">
-          <h3>Plantillas de Prompts ⚙️</h3>
+          <h3><i class="fas fa-file-alt icon-product"></i> Plantillas de Prompts</h3>
           <p>Soluciones instantáneas listas para usar y adaptar. Máxima eficiencia en tareas de IA cotidianas.</p>
         </article>
         <article class="producto">
-          <h3>Ebooks y Guías 📚</h3>
+          <h3><i class="fas fa-book icon-product"></i> Ebooks y Guías</h3>
           <p>Guías profundas sobre estrategias avanzadas de IA aplicada y monetización de conocimiento.</p>
         </article>
         <article class="producto">
-          <h3>Herramientas Automatizadas 🤖</h3>
+          <h3><i class="fas fa-robot icon-product"></i> Herramientas Automatizadas</h3>
           <p>Generadores inteligentes y scripts para aumentar tu productividad y reducir la carga de trabajo manual.</p>
         </article>
         <article class="producto">
-          <h3>Membresías Exclusivas ✨</h3>
+          <h3><i class="fas fa-star icon-product"></i> Membresías Exclusivas</h3>
           <p>Acceso continuo a contenidos premium, sesiones en vivo y las últimas actualizaciones de la IA.</p>
         </article>
       </div>
@@ -69,24 +75,45 @@
       <div class="servicios-content">
         <h2>Consultoría y Estrategia AI Personalizada</h2>
         <p>Ofrecemos consultoría especializada en ingeniería de prompts y estrategias de monetización digital. Este servicio premium está diseñado para **maximizar el valor de tu conocimiento** y llevar tus ideas a una escala profesional.</p>
-        <a href="#" class="cta-primary" id="abrir-modal2">Solicitar Asesoría Premium</a>
+        <a href="#contacto" class="cta-primary" id="abrir-modal2">Solicitar Asesoría Premium</a>
       </div>
     </section>
 
     <div id="modal-form" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <div class="modal-content">
         <span class="cerrar" aria-label="Cerrar formulario">&times;</span>
-        <h3 id="modal-title" class="sr-only">Formulario de Contacto</h3>
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLScqelEzDNmNbkhK_6BOA5FEYi24xjJ0vNdkyUk-3PqAStZV6A/viewform?usp=dialog" 
-          width="100%" 
-          height="600" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0"
-          title="Formulario de contacto de Google Forms">
-          Cargando formulario de contacto...
-        </iframe>
+        <h3 id="modal-title" class="modal-title">Contáctanos para Asesoría</h3>
+        <p class="modal-subtitle">¡Estamos listos para potenciar tu conocimiento!</p>
+        
+        <form class="contact-form" action="https://formspree.io/f/manpapqp" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre y apellido">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu.correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono (Opcional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+XX XXX XXX XXX">
+            </div>
+            <div class="form-group">
+                <label for="service">Servicio de Interés</label>
+                <select id="service" name="service">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="prompt_engineering">Prompt Engineering</option>
+                    <option value="asesoria_ia">Asesoría en Estrategias IA</option>
+                    <option value="cursos_digitales">Creación de Cursos Digitales</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Describe brevemente tus necesidades o preguntas..."></textarea>
+            </div>
+            <button type="submit" class="cta-primary form-submit-btn">Enviar Mensaje</button>
+        </form>
       </div>
     </div>
   </main>
@@ -101,20 +128,28 @@
     <nav class="footer-social" aria-label="Redes Sociales">
       <p>Síguenos en:</p>
       <ul class="social-links">
-        <li><a href="https://www.instagram.com/ksm_servicios" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.facebook.com/fernandomef" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        </ul>
+        <li><a href="https://www.instagram.com/ksm_servicios" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.facebook.com/fernandomef" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+      </ul>
     </nav>
   </footer>
 
   <script>
     const modal = document.getElementById("modal-form");
-    const btns = [document.getElementById("abrir-modal"), document.getElementById("abrir-modal2")];
+    // Se incluye el nuevo botón del header en la lista de botones que abren el modal
+    const btns = [
+        document.getElementById("abrir-modal"), 
+        document.getElementById("abrir-modal2"), 
+        document.getElementById("abrir-modal-header")
+    ];
     const span = document.getElementsByClassName("cerrar")[0];
 
     btns.forEach(btn => {
-      btn.onclick = function() {
-        modal.style.display = "block";
+      if (btn) { // Asegurarse de que el elemento existe antes de añadir el evento
+        btn.onclick = function(e) {
+          e.preventDefault(); // Previene el salto de página si es un <a>
+          modal.style.display = "block";
+        }
       }
     });
 
